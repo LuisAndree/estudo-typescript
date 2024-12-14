@@ -41,3 +41,16 @@ console.log('conteudo:', primeiroParagrafo.innerHTML);
 
 emailInput[0].value = "ANDRE2016999@GMAIL.COM";
 console.log(emailInput[0].value);
+
+// Criando elementos na pagina web
+
+const listaUl = document.querySelector('ul#lista'); // pega a tag ul
+const listaLis = document.querySelectorAll('ul > li')
+
+const novaTagLi = document.createElement('li');
+novaTagLi.textContent = 'SEGUNDO ITEN'; // pode ser com innerHTML tbm
+console.log(novaTagLi);
+
+//listaUl.appendChild(novaTagLi); 
+
+listaUl.insertBefore(novaTagLi, listaLis[1]);
