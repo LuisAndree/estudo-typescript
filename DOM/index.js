@@ -54,3 +54,7 @@ console.log(novaTagLi);
 //listaUl.appendChild(novaTagLi); 
 
 listaUl.insertBefore(novaTagLi, listaLis[1]);
+
+// Removendo elementos
+
+listaUl.removeChild(listaLis[0]);
